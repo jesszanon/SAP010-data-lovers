@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -12,13 +13,13 @@
     <header>
       <img id="logo" src="Estudante digital.png" alt="logo">
       <h1 id="tituloprincipal">ENCONTRE SEU DESTINO DE INTERCÂMBIO!🔎</h1>
-      <div>
-        <img src="mapa_mundi-removebg-preview.png" alt="Mapa Mundi" id="continente">
     </header>
+    <div id="continente">
+      <img src="mapa_mundi-removebg-preview.png" alt="Mapa Mundi" >
   </div>
   </div>
-  
-  <label for="Filtro1" class="filtros1">Continentes</label>
+  <div class="filtros">
+    <label for="Filtro1"> <strong>Continentes:</strong></label>
   <select>
     <option selected disabled value="Todos"></option>
     <option value="AmrSul">América do Sul</option>
@@ -29,16 +30,16 @@
     <option value="Asia">Ásia</option>
     <option value="Oce">Oceania</option>
   </select>
-  </section>
+  
 
-  <label for="Filtro2" class="filtros2">A-Z</label>
+  <label for="Filtro2"><strong>A-Z:</strong></label>
   <select>
     <option selected disabled value="Todos"></option>
     <option value="az">A-Z</option>
     <option value="za">Z-A</option>
-
   </select>
-  </section>
+</div>
+  
 
   <div id="root"></div>
   <script src="main.js" type="module"></script>
