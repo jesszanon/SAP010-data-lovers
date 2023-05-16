@@ -74,6 +74,11 @@ body {
   background-color: #87b3e6;
   border-radius: 20px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+  transition: all 0.8s;
+  
+}
+.bands:hover{
+  background-color: rgb(20, 47, 122);
 }
   .bandeiras {
     

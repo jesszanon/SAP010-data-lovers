@@ -89,30 +89,7 @@ else {
 }
 }
 
-function exibirBandeiras(op) {
-  let exibirFlagsDiv = document.getElementById('exibirFlags');
-  exibirFlagsDiv.innerHTML = '';
-
-  let flagsCountries = op.map(country => {
-    let flagsDiv = document.createElement('div');
-    let nameElement = document.createElement('h3');
-    let flagElement = document.createElement('img');
-    flagElement.classList.add('imgBand');
-    nameElement.textContent = country.name.common;
-    flagElement.src = country.flags.png;
-
-    flagsDiv.appendChild(nameElement);
-    flagsDiv.appendChild(flagElement);
-    flagsDiv.classList.add('bands');
-
-    return flagsDiv;
-  });
-
-  flagsCountries.forEach(flag => {
-    exibirFlagsDiv.appendChild(flag);
-  });
-}
+  
 
 
-
-export {filtroAz, filtroCont, exibirBandeiras}
+export {filtroAz, filtroCont}
