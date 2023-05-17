@@ -15,12 +15,20 @@
       <h1 id="tituloprincipal">ENCONTRE SEU DESTINO DE INTERCÂMBIO!🔎</h1>
     </header>
     <div id="continente">
-      <img id="mapaheader" src="mapa_mundi-removebg-preview.png" alt="Mapa Mundi" >
-  </div>
+      <img id="mapaheader" src="mapa_mundi-removebg-preview.png" alt="Mapa Mundi">
+    </div>
   </div>
   <div class="filtros">
-    <label  for="Filtro1"> <strong>Continentes:</strong></label>
-  <select id="opcao">
+
+    <label for="Filtro2"><strong>A-Z:</strong></label>
+    <select id="az">
+    <option selected disabled value="Todos"></option>
+    <option value="az">A-Z</option>
+    <option value="za">Z-A</option>
+
+    </select>
+    <label for="Filtro1"> <strong>Continentes:</strong></label>
+    <select id="opcao">
     <option selected value="Todos">Todos</option>
     <option value="América">América</option>
     <option value="Antártida">Antártida</option>
@@ -28,19 +36,14 @@
     <option value="Europa">Europa</option>
     <option value="Ásia">Ásia</option>
     <option value="Oceania">Oceania</option>
-  </select>
-  
+    </select>
 
-  <label for="Filtro2"><strong>A-Z:</strong></label>
-  <select id="az">
-    <option selected disabled value="Todos"></option>
-    <option value="az">A-Z</option>
-    <option value="za">Z-A</option>
-  </select>
-</div>
-<div id="exibirFlags" class="bandeiras">
 
-</div>
+
+  </div>
+  <div id="exibirFlags" class="bandeiras">
+
+  </div>
 
   <div id="root"></div>
   <script src="main.js" type="module"></script>
