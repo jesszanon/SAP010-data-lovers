@@ -91,5 +91,4 @@ function filtroCont(arr, opcao) {
 
 
 
-
 export { filtroAz, filtroCont }
