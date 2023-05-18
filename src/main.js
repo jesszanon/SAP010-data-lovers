@@ -1,4 +1,4 @@
-import { filtroAz, filtroCont } from './data.js';
+import { filtroAz, filtroCont, calcularPercentualIngles} from './data.js';
 import countries from './data/countries/countries.js';
 
 
@@ -51,11 +51,14 @@ window.addEventListener('load', function () {
 });
 
 // Adicionar o evento de mudança ao select
+let a = document.getElementById("porcentagem")
 let filtroOp = document.getElementById('opcao');
 filtroOp.addEventListener('change', function () {
   let op = filtroOp.value;
   var filteredCountries = filtroCont(countries.countries, op);
   exibirPaises(filteredCountries);
+  let b = calcularPercentualIngles(filteredCountries)
+  a.innerHTML = 'O continente escolhido tem '+ b +'% de países que usa inglês como seu idioma oficial!'
 });
 
 let elementosDeOrdenacao = document.getElementById('az');

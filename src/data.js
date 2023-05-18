@@ -26,7 +26,7 @@ function filtroAz(arr, opcao) {
     })
   }
 
-   else if (opcao == 'za') {
+  else if (opcao == 'za') {
     return arr.sort((a, b) => {
       if (a.name.common > b.name.common) {
         return -1;
@@ -89,6 +89,20 @@ function filtroCont(arr, opcao) {
   }
 }
 
+function calcularPercentualIngles(paises) {
+  var totalPaises = paises.length;
+  var paisesQueFalamIngles = 0;
+  
+  for (var i = 0; i < totalPaises; i++) {
+    var idiomas = paises[i].languages;
+    
+    if (idiomas && idiomas.eng === "English") {
+      paisesQueFalamIngles++;
+    }
+  }
+  
+  var percentual = (paisesQueFalamIngles / totalPaises) * 100;
+  return percentual.toFixed(2);
+}
 
-
-export { filtroAz, filtroCont }
+export { filtroAz, filtroCont, calcularPercentualIngles}
