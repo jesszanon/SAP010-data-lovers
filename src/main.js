@@ -1,38 +1,39 @@
-import { filtroAz, filtroCont, calcularPercentualIngles} from './data.js';
-import countries from './data/countries/countries.js';
-
+import { filtroAz, filtroCont, calcularPercentualIngles } from "./data.js";
+import countries from "./data/countries/countries.js";
 
 function exibirPaises(arr) {
-  let exibirFlagsDiv = document.getElementById('exibirFlags');
-  exibirFlagsDiv.innerHTML = '';
+  const exibirFlagsDiv = document.getElementById("exibirFlags");
+  exibirFlagsDiv.innerHTML = "";
 
-  let flagsCountries = arr.map(country => {
-    let flagsDiv = document.createElement('div');
-    let nameElement = document.createElement('h3');
-    let flagElement = document.createElement('img');
-    let languagesElement = document.createElement('p');
-    let capitalElement = document.createElement('p');
-    let populationElement = document.createElement('p');
-    flagElement.classList.add('imgBand');
+  const flagsCountries = arr.map((country) => {
+    const flagsDiv = document.createElement("div");
+    const nameElement = document.createElement("h3");
+    const flagElement = document.createElement("img");
+    const languagesElement = document.createElement("p");
+    const capitalElement = document.createElement("p");
+    const populationElement = document.createElement("p");
+    flagElement.classList.add("imgBand");
     nameElement.textContent = country.name.common;
     flagElement.src = country.flags.png;
 
     // Verificar se a propriedade "languages" existe e é um objeto
-    if (country.languages && typeof country.languages === 'object') {
+    if (country.languages && typeof country.languages === "object") {
       // Obter os valores das linguagens e unir em uma string separada por vírgula
-      const languages = "Idioma: " + Object.values(country.languages).join(', ');
+      const languages =
+        "Idioma: " + Object.values(country.languages).join(", ");
       languagesElement.textContent = languages;
     } else {
       // Caso a propriedade "languages" não exista ou não seja um objeto, exibir uma mensagem de ausência de dados
-      languagesElement.textContent = 'N/A';
+      languagesElement.textContent = "N/A";
     }
 
     capitalElement.textContent = "Capital: " + country.capital;
-    populationElement.textContent = "População: " + country.population.toLocaleString('pt-BR');
+    populationElement.textContent =
+      "População: " + country.population.toLocaleString("pt-BR");
 
     flagsDiv.appendChild(nameElement);
     flagsDiv.appendChild(flagElement);
-    flagsDiv.classList.add('bands');
+    flagsDiv.classList.add("bands");
     flagsDiv.appendChild(languagesElement);
     flagsDiv.appendChild(capitalElement);
     flagsDiv.appendChild(populationElement);
@@ -40,34 +41,35 @@ function exibirPaises(arr) {
     return flagsDiv;
   });
 
-  flagsCountries.forEach(flag => {
+  flagsCountries.forEach((flag) => {
     exibirFlagsDiv.appendChild(flag);
   });
 }
 
 // Chamar a função ao carregar a página
-window.addEventListener('load', function () {
+window.addEventListener("load", function () {
   exibirPaises(countries.countries);
 });
 
 // Adicionar o evento de mudança ao select
-let a = document.getElementById("porcentagem")
-let filtroOp = document.getElementById('opcao');
-filtroOp.addEventListener('change', function () {
-  let op = filtroOp.value;
-  var filteredCountries = filtroCont(countries.countries, op);
+const a = document.getElementById("porcentagem");
+const filtroOp = document.getElementById("opcao");
+filtroOp.addEventListener("change", function () {
+  const op = filtroOp.value;
+  const filteredCountries = filtroCont(countries.countries, op);
   exibirPaises(filteredCountries);
-  let b = calcularPercentualIngles(filteredCountries)
-  a.innerHTML = 'O continente escolhido tem '+ b +'% de países que usa inglês como seu idioma oficial!'
+  const b = calcularPercentualIngles(filteredCountries);
+  a.classList.add("curiosidade");
+  a.innerHTML =
+    "<h3>O continente escolhido tem " +
+    b +
+    "% de países que usa inglês como seu idioma oficial!</h3>";
 });
 
-let elementosDeOrdenacao = document.getElementById('az');
-elementosDeOrdenacao.addEventListener('change', function () {
-  let ord = elementosDeOrdenacao.value
-  let op = filtroOp.value;
-  let resultado = filtroAz(filtroCont(countries.countries, op), ord);
+const elementosDeOrdenacao = document.getElementById("az");
+elementosDeOrdenacao.addEventListener("change", function () {
+  const ord = elementosDeOrdenacao.value;
+  const op = filtroOp.value;
+  const resultado = filtroAz(filtroCont(countries.countries, op), ord);
   exibirPaises(resultado);
 });
-
-
-

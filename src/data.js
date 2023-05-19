@@ -11,34 +11,29 @@ export const anotherExample = () => {
 };
  */
 
-
-
 function filtroAz(arr, opcao) {
-  if (opcao == 'az') {
+  if (opcao === "az") {
     return arr.sort((a, b) => {
       if (a.name.common < b.name.common) {
         return -1;
-      }
-      else if (a.name.common > b.name.common) {
-        return 1;
-      }
-      return 0;
-    })
-  }
-
-  else if (opcao == 'za') {
-    return arr.sort((a, b) => {
-      if (a.name.common > b.name.common) {
-        return -1;
-      }
-      else if (a.name.common < b.name.common) {
+      } else if (a.name.common > b.name.common) {
         return 1;
       }
       return 0;
     });
-  } else { arr }
+  } else if (opcao === "za") {
+    return arr.sort((a, b) => {
+      if (a.name.common > b.name.common) {
+        return -1;
+      } else if (a.name.common < b.name.common) {
+        return 1;
+      }
+      return 0;
+    });
+  } else {
+    arr;
+  }
 }
-
 
 function filtroCont(arr, opcao) {
   const america = [];
@@ -49,60 +44,51 @@ function filtroCont(arr, opcao) {
   const antarctica = [];
 
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i].continents == "America") {
+    if (arr[i].continents[0] === "America") {
       america.push(arr[i]);
-    }
-    else if (arr[i].continents == "Europe") {
+    } else if (arr[i].continents[0] === "Europe") {
       europe.push(arr[i]);
-    }
-    else if (arr[i].continents == "Asia") {
+    } else if (arr[i].continents[0] === "Asia") {
       asia.push(arr[i]);
-    } else if (arr[i].continents == "Africa") {
+    } else if (arr[i].continents[0] === "Africa") {
       africa.push(arr[i]);
-    } else if (arr[i].continents == "Oceania") {
+    } else if (arr[i].continents[0] === "Oceania") {
       oceania.push(arr[i]);
-    }
-    else {
+    } else {
       antarctica.push(arr[i]);
     }
   }
-  if (opcao == 'Oceania') {
-    return oceania
-  }
-  else if (opcao == 'Ásia') {
-    return asia
-  }
-  else if (opcao == 'Europa') {
-    return europe
-  }
-  else if (opcao == 'América') {
-    return america
-  }
-  else if (opcao == 'África') {
-    return africa
-  }
-  else if (opcao == 'Antártida') {
-    return antarctica
-  }
-  else {
-    return arr
+  if (opcao === "Oceania") {
+    return oceania;
+  } else if (opcao === "Ásia") {
+    return asia;
+  } else if (opcao === "Europa") {
+    return europe;
+  } else if (opcao === "América") {
+    return america;
+  } else if (opcao === "África") {
+    return africa;
+  } else if (opcao === "Antártida") {
+    return antarctica;
+  } else {
+    return arr;
   }
 }
 
 function calcularPercentualIngles(paises) {
-  var totalPaises = paises.length;
-  var paisesQueFalamIngles = 0;
-  
-  for (var i = 0; i < totalPaises; i++) {
-    var idiomas = paises[i].languages;
-    
+  const totalPaises = paises.length;
+  let paisesQueFalamIngles = 0;
+
+  for (let i = 0; i < totalPaises; i++) {
+    const idiomas = paises[i].languages;
+
     if (idiomas && idiomas.eng === "English") {
       paisesQueFalamIngles++;
     }
   }
-  
-  var percentual = (paisesQueFalamIngles / totalPaises) * 100;
+
+  const percentual = (paisesQueFalamIngles / totalPaises) * 100;
   return percentual.toFixed(2);
 }
 
-export { filtroAz, filtroCont, calcularPercentualIngles}
+export { filtroAz, filtroCont, calcularPercentualIngles };
