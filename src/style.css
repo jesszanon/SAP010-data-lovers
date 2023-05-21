@@ -3,21 +3,29 @@
 body {
   display: flex;
   flex-direction: column;
+  height: 100vh; /* /o tamanho da altura do elemento será definido como o tamanho da janela do navegador (100 porcento da altura da janela do navegador)/ */
+  background-color: black;
+  align-items: center;
 }
 
 header {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 0;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #b2c8d6, black);
+  border-radius: 20px;
 }
 
 #logo {
   max-width: 180px;
   max-height: 180px;
   left: 5%;
+  display: flex;
 }
 
 #tituloprincipal {
+  display: flex;
   font-size: 40px;
   font-family: "faustina";
   text-align: right;
@@ -25,38 +33,74 @@ header {
   margin-top: 50px;
   right: 10%;
   margin-left: 0px;
-  color: #006400;
+  color:white;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  font-size: clamp(1em, 3em + 3vw, 2.5em);
 }
 
-body {
-  background-color: #e0ffff;
-}
 
-#continente {
-  height: 150px;
+/* #continente {
   width: 90%;
   margin-top: 0;
+  margin-bottom: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 100px;
+  align-content: center;
+  justify-items: center;
+ background-color: #006400;
+ justify-content: center;
+} */
+.vid{
+  width: 100vw;
+  height: auto;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+video{
+  display: flex;
+  width: 400px;
+  object-fit: fill; 
 }
 
 #mapaheader {
   height: 350px;
   width: 900px;
+  display: flex;
 }
 
 .filtros {
-  display: flex;
-  justify-content: center;
-  margin-top: 18%;
-  color: #006400;
+  margin-top: 10px;
+  color: white;
   font-family: "faustina";
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
-.filtros select:first-of-type {
-  margin-right: 70px;
+#az{
+  margin-right: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 70px;
+  transition: all 0.5s;
+}
+
+#opcao{
+  padding: 5px;
+  border-radius: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  text-transform: uppercase;
+}
+
+#az:hover{
+  width: 90px;
+}
+
+#opcao:hover{
+  width: 120px;
 }
 
 .bands {
@@ -72,6 +116,8 @@ body {
   border-radius: 20px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
   transition: all 0.8s;
+  font-family: "faustina";
+  font-weight: bold;
 }
 
 .bands:hover {
@@ -92,6 +138,16 @@ body {
 h3 {
   margin-top: 10px;
   color: #e0ffff;
+  font-size:x-large;
+  text-align: center;
+}
+h4 {
+  margin-top: 10px;
+  color: #e0ffff;
+  font-size: large;
+  font-family: "faustina";
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 p {
@@ -100,12 +156,29 @@ p {
 }
 
 .curiosidade {
-  border-radius: 20px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
-  border: 8px solid #2f939f;
   border-radius: 6px;
-  padding: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+  border: 2px solid#006400;
+  padding: 8px;
   text-align: center;
   background-color: #2f939f;
   text-transform: uppercase;
+  display: flex;
+  font-size: clamp(1em, 2.5em + 2.5vw, 1em);
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "faustina";
+}
+
+.rodape{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: linear-gradient(to bottom, black, #4c6c81);
+  border-radius: 20px;
+  margin-bottom: 0;
+  width: 100%;
 }

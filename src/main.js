@@ -7,7 +7,7 @@ function exibirPaises(arr) {
 
   const flagsCountries = arr.map((country) => {
     const flagsDiv = document.createElement("div");
-    const nameElement = document.createElement("h3");
+    const nameElement = document.createElement("h4");
     const flagElement = document.createElement("img");
     const languagesElement = document.createElement("p");
     const capitalElement = document.createElement("p");
@@ -20,16 +20,16 @@ function exibirPaises(arr) {
     if (country.languages && typeof country.languages === "object") {
       // Obter os valores das linguagens e unir em uma string separada por vírgula
       const languages =
-        "Idioma: " + Object.values(country.languages).join(", ");
+        "IDIOMA: " + Object.values(country.languages).join(", ");
       languagesElement.textContent = languages;
     } else {
       // Caso a propriedade "languages" não exista ou não seja um objeto, exibir uma mensagem de ausência de dados
       languagesElement.textContent = "N/A";
     }
 
-    capitalElement.textContent = "Capital: " + country.capital;
+    capitalElement.textContent = "CAPITAL: " + country.capital;
     populationElement.textContent =
-      "População: " + country.population.toLocaleString("pt-BR");
+      "POPULAÇÃO: " + country.population.toLocaleString("pt-BR");
 
     flagsDiv.appendChild(nameElement);
     flagsDiv.appendChild(flagElement);
