@@ -63,7 +63,7 @@ filtroOp.addEventListener("change", function () {
   a.innerHTML =
     "<h3>O continente escolhido tem " +
     b +
-    "% de países que usa inglês como seu idioma oficial!</h3>";
+    "% de países que usa o inglês como seu idioma oficial!</h3>";
 });
 
 const elementosDeOrdenacao = document.getElementById("az");

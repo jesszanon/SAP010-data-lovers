@@ -1,25 +1,12 @@
-// estas funciones son de ejemplo
-/* 
-import countries from "./data/countries/countries";
-
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};
- */
-
 function filtroAz(arr, opcao) {
   if (opcao === "az") {
     return arr.sort((a, b) => {
       if (a.name.common < b.name.common) {
         return -1;
-      } else if (a.name.common > b.name.common) {
+      }  else if (a.name.common > b.name.common) {
         return 1;
       }
-      return 0;
+      return 1; 
     });
   } else if (opcao === "za") {
     return arr.sort((a, b) => {
