@@ -11,19 +11,13 @@
 <body>
   
     <header>
-      <img id="logo" src="Estudante digital.png" alt="logo" />
-      <h1 id="tituloprincipal">ENCONTRE SEU DESTINO DE INTERCÂMBIO!🔎</h1>
+      <img id="logo" src="logo.png" alt="logo" /> 
+      <h1 id="tituloprincipal">ENCONTRE SEU DESTINO DE INTERCÂMBIO!🔎</h1> 
     </header>
     <section class="vid">
       <video width="800px" autoplay muted loop id="mapaheader" src="fundo site.mp4" alt="Mapa Mundi"></video>
   </section>
   <section class="filtros">
-    <label for="Filtro2"><strong>A-Z:</strong></label>
-    <select id="az">
-      <option selected disabled value="Todos"></option>
-      <option value="az">A-Z</option>
-      <option value="za">Z-A</option>
-    </select>
     <label> <strong>Continentes:</strong></label>
     <select id="opcao">
       <option selected value="Todos">Todos</option>
@@ -34,11 +28,17 @@
       <option value="Ásia">Ásia</option>
       <option value="Oceania">Oceania</option>
     </select>
+    <label for="Filtro2"><strong>A-Z:</strong></label>
+    <select id="az">
+      <option selected disabled value="Todos"></option>
+      <option value="az">A-Z</option>
+      <option value="za">Z-A</option>
+    </select>
   </section>
   <div id="porcentagem"></div>
   <div id="exibirFlags" class="bandeiras"></div>
   <footer class="rodape">
-    <h2>Criado por Alessandra Alves Lopes e Jéssica Zanon </h2>
+    <h2>🌍 Criado por Alessandra Alves Lopes e Jéssica Zanon 🌍 </h2>
   </footer>
   <div id="root"></div>
   <script src="main.js" type="module"></script>

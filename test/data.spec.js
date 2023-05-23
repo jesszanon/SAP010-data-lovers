@@ -10,6 +10,7 @@ import {
   arrOceania,
 } from "./mock2.js";
 import { CalcCont } from "./mock3.js";
+import {arrOrdenado, arrDesordenado} from "./mock4.js";
 
 //filtro A Z
 describe("filtrandoAz", () => {
@@ -19,6 +20,17 @@ describe("filtrandoAz", () => {
 
   it("returns `example`", () => {
     expect(filtroAz(PaisesDesordenado, "az")).toEqual(ArrPaises);
+  });
+});
+
+//filtro Z A
+describe("filtrandoZa", () => {
+  it("is a function", () => {
+    expect(typeof filtroAz).toBe("function");
+  });
+
+  it("returns `example`", () => {
+    expect(filtroAz(arrOrdenado, "za")).toEqual(arrDesordenado);
   });
 });
 
