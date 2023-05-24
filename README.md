@@ -1,6 +1,6 @@
 # Data Lovers
 
-<video width="800px" src="Data Lovers - Estudante Digital.mp4">
+![Vídeo Fundo](./src/Data%20Lovers%20-%20Estudante%20Digital.mp4)
 
 [![Tecnologias e Ferramentas utilizadas:](https://skillicons.dev/icons?i=js,html,css,figma,github,git,jest,vscode)](https://skillicons.dev)
 
@@ -41,11 +41,11 @@ Além disso ao filtrar, o usuário também terá a informação da porcentagem d
 
 Nós iniciamos com um protótipo de baixa fidelidade, desenhamos num papel mesmo para entender melhor o que gostaríamos de criar.
 PROTÓTIPO DE BAIXA FIDELIDADE
-<img src= "Protótipo de Baixa fidelidade (Estudante Digital).jpeg">
+![Protótipo de Baixa Fidelidade](./src/Prot%C3%B3tipo%20de%20Baixa%20fidelidade.jpeg)
 
 E depois desenhamos no Figma um protótipo de Alta Fidelidade para ficar um site mais parecido com a realidade. Foi muito bom porque assim aprendemos a mexer nessa ferramenta tão utilizada atualmente.
 PROTÓTIPO DE ALTA FIDELIDADE
-<img src= "Protótipo de Alta Fidelidade Data Lovers.jpg">
+![Protótipo de Alta Fidelidade](./src/Prot%C3%B3tipo%20de%20Alta%20Fidelidade%20Data%20Lovers.jpeg)
 
 Além disso aprendemos a usar o Trello como ferramenta de organização e ali conseguimos ver o site tomar forma. Utilizamos DOM, objetos, arrays, uso de condicionais.
 
