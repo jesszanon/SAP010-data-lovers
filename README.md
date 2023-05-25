@@ -25,7 +25,7 @@
 
 O "Data Lovers" foi o segundo projeto proposto pela Laboratória para desenvolver um site que o usuário pudesse visualizar, filtrar e pesquisar dados disponibilizado por eles a partir de um banco. E o primeiro projeto feito em dupla tornando o desafio ainda maior para nós graduandas.
 
-Nós desenvolvemos o "Estudante Digital" =>
+Nós desenvolvemos o "Estudante Digital" => https://jesszanon.github.io/SAP010-data-lovers/
 
 ----
 
