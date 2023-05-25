@@ -1,18 +1,25 @@
 # Data Lovers
 
-![Vídeo Fundo](./src/Data%20Lovers%20-%20Estudante%20Digital.mp4)
+![foto tela](./src/print%20tela%20site.png)
 
+
+## Tecnologias e Ferramentas utilizadas:
 [![Tecnologias e Ferramentas utilizadas:](https://skillicons.dev/icons?i=js,html,css,figma,github,git,jest,vscode)](https://skillicons.dev)
 
+----
 ## Índice
 
-*1. Resumo do Projeto
-*2. História do Usuário
-*3. Desenvolvimento do Site
-*4. Teste de Usabilidade
-*5. Desenvolvedoras
+[*1. Resumo do Projeto](#1-resumo-do-projeto)
 
--
+[*2. História do Usuário](#2-história-do-usuário)
+
+[*3. Desenvolvimento do Site](#3-desenvolvimento-do-site)
+
+[*4. Teste de Usabilidade](#4-testes-de-usabilidade)
+
+[*5. Desenvolvedoras](#5-desenvolvedoras)
+
+----
 
 ## 1. Resumo do projeto
 
@@ -20,7 +27,7 @@ O "Data Lovers" foi o segundo projeto proposto pela Laboratória para desenvolve
 
 Nós desenvolvemos o "Estudante Digital" =>
 
--
+----
 
 ## 2. História do usuário
 
@@ -35,27 +42,33 @@ Além disso ao filtrar, o usuário também terá a informação da porcentagem d
 
   - [Pesquisa com estudantes de geografia](src/data/countries/README.pt.md)
 
--
+----
 
 ## 3. Desenvolvimento do Site
 
 Nós iniciamos com um protótipo de baixa fidelidade, desenhamos num papel mesmo para entender melhor o que gostaríamos de criar.
 PROTÓTIPO DE BAIXA FIDELIDADE
-![Protótipo de Baixa Fidelidade](./src/Prot%C3%B3tipo%20de%20Baixa%20fidelidade.jpeg)
+![prototipo baixa fidelidade](./src/Prot%C3%B3tipo%20de%20Baixa%20fidelidade.jpeg)
 
 E depois desenhamos no Figma um protótipo de Alta Fidelidade para ficar um site mais parecido com a realidade. Foi muito bom porque assim aprendemos a mexer nessa ferramenta tão utilizada atualmente.
 PROTÓTIPO DE ALTA FIDELIDADE
-![Protótipo de Alta Fidelidade](./src/Prot%C3%B3tipo%20de%20Alta%20Fidelidade%20Data%20Lovers.jpeg)
+![prototipo de alta fidelidade](./src/Prot%C3%B3tipo%20de%20Alta%20Fidelidade%20Data%20Lovers.jpeg)
 
 Além disso aprendemos a usar o Trello como ferramenta de organização e ali conseguimos ver o site tomar forma. Utilizamos DOM, objetos, arrays, uso de condicionais.
 
 O site foi tomando forma e com isso fizemos algumas alterações, principalmente no CSS para ficar mais interessante para o usuário. Aprendemos bastante sobre responsividade e usamos o Media Query para fazer os ajustes e deixar o site responsivo para diferentes formatos de telas.
 
+<div align = "center">
+
+![mobile](./src/print%20mobile.png) 
+
+</div>
+
 Aprendemos a desenvolver testes unitários para testar os filtros e funções do nosso site.
 
 Na parte de Git e GitHub criamos branches, fizemos fork, clone, pull request, merge e utilizamos o GitHub Pages.
 
--
+----
 
 ## 4. Testes de Usabilidade
 
@@ -69,7 +82,7 @@ A ideia das flags na página inicial do Data Lovers também foi pensado para o m
 
 Por último, adequamos o tamanho das fontes, imagens e o espaçamento entre linhas e elementos, buscando melhorar a navegação do usuário em telas menores.
 
--
+----
 
 ## 5. Desenvolvedoras
 
